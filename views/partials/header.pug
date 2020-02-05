@@ -1,0 +1,8 @@
+-
+  const list = [{page: "Home", link: "/"}, {page: "About", link: "/about"}]
+nav
+  ul.nav
+    each item in list
+      li(class= `nav__item ${item.link === location ? "active": null}`)
+        a.nav__link(href=item.link)= item.page
+h1= message
