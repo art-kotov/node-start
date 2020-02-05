@@ -12,4 +12,4 @@ logger.on('message', data => {
     console.log(data)
 })
 
-logger.log('hello')
+logger.log('hello');
